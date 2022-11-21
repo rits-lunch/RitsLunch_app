@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE31D456292B784800105E2E /* RitsLunchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D455292B784800105E2E /* RitsLunchApp.swift */; };
+		EE31D458292B784800105E2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D457292B784800105E2E /* ContentView.swift */; };
+		EE31D45A292B784800105E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE31D459292B784800105E2E /* Assets.xcassets */; };
+		EE31D45D292B784800105E2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE31D45C292B784800105E2E /* Preview Assets.xcassets */; };
+		EE31D467292B784800105E2E /* RitsLunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D466292B784800105E2E /* RitsLunchTests.swift */; };
+		EE31D471292B784800105E2E /* RitsLunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D470292B784800105E2E /* RitsLunchUITests.swift */; };
+		EE31D473292B784800105E2E /* RitsLunchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D472292B784800105E2E /* RitsLunchUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE31D463292B784800105E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE31D44A292B784700105E2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE31D451292B784700105E2E;
+			remoteInfo = RitsLunch;
+		};
+		EE31D46D292B784800105E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE31D44A292B784700105E2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE31D451292B784700105E2E;
+			remoteInfo = RitsLunch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE31D452292B784700105E2E /* RitsLunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RitsLunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE31D455292B784800105E2E /* RitsLunchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitsLunchApp.swift; sourceTree = "<group>"; };
+		EE31D457292B784800105E2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE31D459292B784800105E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE31D45C292B784800105E2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE31D462292B784800105E2E /* RitsLunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RitsLunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE31D466292B784800105E2E /* RitsLunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitsLunchTests.swift; sourceTree = "<group>"; };
+		EE31D46C292B784800105E2E /* RitsLunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RitsLunchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE31D470292B784800105E2E /* RitsLunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitsLunchUITests.swift; sourceTree = "<group>"; };
+		EE31D472292B784800105E2E /* RitsLunchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitsLunchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE31D44F292B784700105E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE31D45F292B784800105E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE31D469292B784800105E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE31D449292B784700105E2E = {
+			isa = PBXGroup;
+			children = (
+				EE31D454292B784800105E2E /* RitsLunch */,
+				EE31D465292B784800105E2E /* RitsLunchTests */,
+				EE31D46F292B784800105E2E /* RitsLunchUITests */,
+				EE31D453292B784700105E2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE31D453292B784700105E2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE31D452292B784700105E2E /* RitsLunch.app */,
+				EE31D462292B784800105E2E /* RitsLunchTests.xctest */,
+				EE31D46C292B784800105E2E /* RitsLunchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE31D454292B784800105E2E /* RitsLunch */ = {
+			isa = PBXGroup;
+			children = (
+				EE31D455292B784800105E2E /* RitsLunchApp.swift */,
+				EE31D457292B784800105E2E /* ContentView.swift */,
+				EE31D459292B784800105E2E /* Assets.xcassets */,
+				EE31D45B292B784800105E2E /* Preview Content */,
+			);
+			path = RitsLunch;
+			sourceTree = "<group>";
+		};
+		EE31D45B292B784800105E2E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE31D45C292B784800105E2E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE31D465292B784800105E2E /* RitsLunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE31D466292B784800105E2E /* RitsLunchTests.swift */,
+			);
+			path = RitsLunchTests;
+			sourceTree = "<group>";
+		};
+		EE31D46F292B784800105E2E /* RitsLunchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE31D470292B784800105E2E /* RitsLunchUITests.swift */,
+				EE31D472292B784800105E2E /* RitsLunchUITestsLaunchTests.swift */,
+			);
+			path = RitsLunchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE31D451292B784700105E2E /* RitsLunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE31D476292B784800105E2E /* Build configuration list for PBXNativeTarget "RitsLunch" */;
+			buildPhases = (
+				EE31D44E292B784700105E2E /* Sources */,
+				EE31D44F292B784700105E2E /* Frameworks */,
+				EE31D450292B784700105E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RitsLunch;
+			productName = RitsLunch;
+			productReference = EE31D452292B784700105E2E /* RitsLunch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE31D461292B784800105E2E /* RitsLunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE31D479292B784800105E2E /* Build configuration list for PBXNativeTarget "RitsLunchTests" */;
+			buildPhases = (
+				EE31D45E292B784800105E2E /* Sources */,
+				EE31D45F292B784800105E2E /* Frameworks */,
+				EE31D460292B784800105E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE31D464292B784800105E2E /* PBXTargetDependency */,
+			);
+			name = RitsLunchTests;
+			productName = RitsLunchTests;
+			productReference = EE31D462292B784800105E2E /* RitsLunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE31D46B292B784800105E2E /* RitsLunchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE31D47C292B784800105E2E /* Build configuration list for PBXNativeTarget "RitsLunchUITests" */;
+			buildPhases = (
+				EE31D468292B784800105E2E /* Sources */,
+				EE31D469292B784800105E2E /* Frameworks */,
+				EE31D46A292B784800105E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE31D46E292B784800105E2E /* PBXTargetDependency */,
+			);
+			name = RitsLunchUITests;
+			productName = RitsLunchUITests;
+			productReference = EE31D46C292B784800105E2E /* RitsLunchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE31D44A292B784700105E2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EE31D451292B784700105E2E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					EE31D461292B784800105E2E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EE31D451292B784700105E2E;
+					};
+					EE31D46B292B784800105E2E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EE31D451292B784700105E2E;
+					};
+				};
+			};
+			buildConfigurationList = EE31D44D292B784700105E2E /* Build configuration list for PBXProject "RitsLunch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE31D449292B784700105E2E;
+			productRefGroup = EE31D453292B784700105E2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE31D451292B784700105E2E /* RitsLunch */,
+				EE31D461292B784800105E2E /* RitsLunchTests */,
+				EE31D46B292B784800105E2E /* RitsLunchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE31D450292B784700105E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE31D45D292B784800105E2E /* Preview Assets.xcassets in Resources */,
+				EE31D45A292B784800105E2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE31D460292B784800105E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE31D46A292B784800105E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE31D44E292B784700105E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE31D458292B784800105E2E /* ContentView.swift in Sources */,
+				EE31D456292B784800105E2E /* RitsLunchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE31D45E292B784800105E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE31D467292B784800105E2E /* RitsLunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE31D468292B784800105E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE31D471292B784800105E2E /* RitsLunchUITests.swift in Sources */,
+				EE31D473292B784800105E2E /* RitsLunchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE31D464292B784800105E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE31D451292B784700105E2E /* RitsLunch */;
+			targetProxy = EE31D463292B784800105E2E /* PBXContainerItemProxy */;
+		};
+		EE31D46E292B784800105E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE31D451292B784700105E2E /* RitsLunch */;
+			targetProxy = EE31D46D292B784800105E2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE31D474292B784800105E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE31D475292B784800105E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE31D477292B784800105E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RitsLunch/Preview Content\"";
+				DEVELOPMENT_TEAM = 67TFDR44G7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RitsLunch.RitsLunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE31D478292B784800105E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RitsLunch/Preview Content\"";
+				DEVELOPMENT_TEAM = 67TFDR44G7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RitsLunch.RitsLunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE31D47A292B784800105E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67TFDR44G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RitsLunch.RitsLunchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RitsLunch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RitsLunch";
+			};
+			name = Debug;
+		};
+		EE31D47B292B784800105E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67TFDR44G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RitsLunch.RitsLunchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RitsLunch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RitsLunch";
+			};
+			name = Release;
+		};
+		EE31D47D292B784800105E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67TFDR44G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RitsLunch.RitsLunchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RitsLunch;
+			};
+			name = Debug;
+		};
+		EE31D47E292B784800105E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67TFDR44G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RitsLunch.RitsLunchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RitsLunch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE31D44D292B784700105E2E /* Build configuration list for PBXProject "RitsLunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE31D474292B784800105E2E /* Debug */,
+				EE31D475292B784800105E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE31D476292B784800105E2E /* Build configuration list for PBXNativeTarget "RitsLunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE31D477292B784800105E2E /* Debug */,
+				EE31D478292B784800105E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE31D479292B784800105E2E /* Build configuration list for PBXNativeTarget "RitsLunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE31D47A292B784800105E2E /* Debug */,
+				EE31D47B292B784800105E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE31D47C292B784800105E2E /* Build configuration list for PBXNativeTarget "RitsLunchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE31D47D292B784800105E2E /* Debug */,
+				EE31D47E292B784800105E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE31D44A292B784700105E2E /* Project object */;
+}
