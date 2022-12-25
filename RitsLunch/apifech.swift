@@ -12,7 +12,7 @@ class YoutubeSearcher: ObservableObject {
    
     func search() ->() {
         // リクエスト用の文字列を生成
-        guard let urlStr = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=ヒカキン&type=video&maxResults=10&key=AIzaSyCcvo_-dl_3ViHON2KGsDRJVdS_WBEfVC0".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) else {
+        guard let urlStr = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=ヒカキン&type=video&maxResults=20&key=AIzaSyCcvo_-dl_3ViHON2KGsDRJVdS_WBEfVC0".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) else {
                 fatalError("URL String error")
         }
         // URLに変換する

@@ -33,19 +33,29 @@ struct ContentView: View {
                 
                 Spacer()
                 if self.searcher.results != nil {
-                    List {
+                    ScrollView{
                         ForEach(self.searcher.results!.items) {item in
                             
-                                VideoRowView(title: item.snippet.title,  description: item.snippet.description)
-                            }
-                        
-                    }
+                            VideoRowView(title: item.snippet.title,  description: item.snippet.description)
+                            
+                                .padding()
+                                .frame(width: 300,height: 400)
+                            
+                                .background(.white)
+                                .cornerRadius(8)
+                                .clipped()
+                            
+                            
+                        }
+                    }  .shadow(color: .gray.opacity(0.7), radius: 5)
                 }
-              
+                  
             
             }
+           
       
         }
+       
     }
 }
 
