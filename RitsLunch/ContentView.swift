@@ -12,6 +12,8 @@ struct ContentView: View {
             
             
             
+            
+            
                 .frame(width: 414, height: 50)
                 .background(.red)
             NavigationView {
