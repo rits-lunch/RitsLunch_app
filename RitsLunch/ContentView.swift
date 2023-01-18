@@ -1,8 +1,3 @@
-//
-//  ContentView.swift
-//  RitsLunch
-//
-//  Created by Yuuki Yamaguchi on 2022/11/21.
 
 import SwiftUI
 
@@ -12,48 +7,58 @@ struct ContentView: View {
     @ObservedObject var searcher = YoutubeSearcher()
     
     var body: some View {
-    
-        NavigationView {
-            VStack {
-                HStack {
-                    VStack{Text("youtube")
-                        Text("sample")
-                    }
+        VStack{
+            Text("RitsLunch").font(.largeTitle)
+            
+            
+            
+                .frame(width: 414, height: 50)
+                .background(.red)
+            NavigationView {
+                VStack {
+                    
+                    
+                    
+                    Spacer()
                     Button(action: {
                         self.searcher.search()
                     }) {
                         Text("表示する")
-                    }
-                    .background(
-                        Capsule()
-                            .foregroundColor(.white)
-                            .frame(width: 80, height: 30))
-                        .padding(20)
-                }
-                
-                Spacer()
-                if self.searcher.results != nil {
-                    ScrollView{
-                        ForEach(self.searcher.results!.items) {item in
-                            
-                            VideoRowView(title: item.snippet.title,  description: item.snippet.description)
-                            
+                    } .background(
+                        Capsule()     )
+                    
+                    if self.searcher.results != nil {
+                        ScrollView{
+                            ForEach(self.searcher.results!.items) {item in
+                                NavigationLink(destination:VideoRowView(title: item.snippet.title,
+                                                                        imgurl: item.snippet.thumbnails.default.url,
+                                                                        description: item.snippet.description)
+                                               
+                                               ,label:{
+                                    VideoRowView(title: item.snippet.title,
+                                                 imgurl: item.snippet.thumbnails.default.url,
+                                                 description: item.snippet.description)}
+                                )
+                                
+                                
                                 .padding()
                                 .frame(width: 300,height: 400)
-                            
+                                
                                 .background(.white)
                                 .cornerRadius(8)
                                 .clipped()
-                            
-                            
-                        }
-                    }  .shadow(color: .gray.opacity(0.7), radius: 5)
+                                
+                                
+                            }
+                        }  .shadow(color: .gray.opacity(0.7), radius: 4)
+                    }
+                    
                 }
-                  
-            
+                
+                
+                
+                
             }
-           
-      
         }
        
     }
