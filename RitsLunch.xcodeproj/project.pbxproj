@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0813C0302957D1C500232259 /* rowview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813C02F2957D1C500232259 /* rowview.swift */; };
+		0813C0322957D1DE00232259 /* projectmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813C0312957D1DE00232259 /* projectmodel.swift */; };
+		0813C0342957D20200232259 /* apifech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813C0332957D20200232259 /* apifech.swift */; };
 		EE31D456292B784800105E2E /* RitsLunchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D455292B784800105E2E /* RitsLunchApp.swift */; };
 		EE31D458292B784800105E2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D457292B784800105E2E /* ContentView.swift */; };
 		EE31D45A292B784800105E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE31D459292B784800105E2E /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0813C02F2957D1C500232259 /* rowview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rowview.swift; sourceTree = "<group>"; };
+		0813C0312957D1DE00232259 /* projectmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectmodel.swift; sourceTree = "<group>"; };
+		0813C0332957D20200232259 /* apifech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apifech.swift; sourceTree = "<group>"; };
 		EE31D452292B784700105E2E /* RitsLunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RitsLunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE31D455292B784800105E2E /* RitsLunchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitsLunchApp.swift; sourceTree = "<group>"; };
 		EE31D457292B784800105E2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				EE31D455292B784800105E2E /* RitsLunchApp.swift */,
 				EE31D457292B784800105E2E /* ContentView.swift */,
+				0813C02F2957D1C500232259 /* rowview.swift */,
+				0813C0312957D1DE00232259 /* projectmodel.swift */,
+				0813C0332957D20200232259 /* apifech.swift */,
 				EE31D459292B784800105E2E /* Assets.xcassets */,
 				EE31D45B292B784800105E2E /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0813C0302957D1C500232259 /* rowview.swift in Sources */,
+				0813C0322957D1DE00232259 /* projectmodel.swift in Sources */,
 				EE31D458292B784800105E2E /* ContentView.swift in Sources */,
 				EE31D456292B784800105E2E /* RitsLunchApp.swift in Sources */,
+				0813C0342957D20200232259 /* apifech.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
