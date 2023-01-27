@@ -23,10 +23,11 @@ struct VideoRowView: View {
                 
                 Text(title)
                     .font(.headline)
+                    
                 Text(description)
                     .font(.caption)
-                    .lineLimit(3)
-                NavigationLink(destination: detail(),label:{ Text("詳細はこちら")}
+                    .lineLimit(1)
+                NavigationLink(destination: menu(),label:{ Text("詳細はこちら")}
                                
                 )
             }
