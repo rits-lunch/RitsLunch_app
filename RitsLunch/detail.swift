@@ -25,7 +25,7 @@ import SwiftUI
                     Spacer()
                         Text("営業中")
                         .frame(width: 70,height: 30)
-                        .background(.green,in:Capsule())
+                        .foregroundColor(.green)
                         .fontWeight(.bold)
                     
                 }.padding(.horizontal,30)
