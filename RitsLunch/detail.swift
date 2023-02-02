@@ -31,6 +31,7 @@ import SwiftUI
                 }.padding(.horizontal,30)
                     .padding(.bottom,50)
                 .padding(.top,10)
+                
               
          
               
@@ -41,7 +42,14 @@ import SwiftUI
                 }
                 )
                 
-            }
+            }.frame(width: 350,height: 300)
+            
+                .background(.white)
+                .cornerRadius(25)
+                .clipped()
+                .padding(20)
+                .shadow(color: .gray.opacity(0.8), radius: 5)
+                .foregroundColor(.black)
         }
         
 }
