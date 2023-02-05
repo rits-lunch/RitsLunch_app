@@ -8,11 +8,11 @@ struct ContentView: View {
     @State private var sheetshowing = true
     var body: some View {
         VStack{
-           Color(red:0.838, green: 0.238, blue: 0.138 ).ignoresSafeArea().frame(height:20)
-                
-              
+            Color(red:0.838, green: 0.238, blue: 0.138 ).ignoresSafeArea().frame(height:20)
             
-             
+            
+            
+            
             ZStack{
                 if self.sheetshowing{
                     VStack{
@@ -20,9 +20,9 @@ struct ContentView: View {
                         Button(action: {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                 self.searcher.search()
-                                                          self.sheetshowing.toggle()
+                                self.sheetshowing.toggle()
                             }
-                          
+                            
                         }) {
                             ZStack{
                                 
@@ -38,43 +38,55 @@ struct ContentView: View {
                     }}
                 else{
                     
-                
-                NavigationView {
-                   
-                    VStack {
+                    
+                    NavigationView {
                         
-                        if self.searcher.results != nil {
-                            Text("店舗一覧").font(.title).fontWeight(.bold).frame(alignment: .leading)
+                        VStack {
                             
-                            ScrollView{
-                                ForEach(self.searcher.results!.items) {item in
-                                    NavigationLink(destination:VideoRowView(title: item.snippet.title,
-                                                                            imgurl: item.snippet.thumbnails.default.url,
-                                                                            description: item.snippet.description)
-                                                   
-                                                   ,label:{
-                                        detail(title:item.snippet.title,imgurl:  item.snippet.thumbnails.default.url, description: item.snippet.description
-                                        )
-                                        
-                                    }       )}
+                            if self.searcher.results != nil {
+                                Text("店舗一覧").font(.title).fontWeight(.bold).frame(alignment: .leading)
                                 
+                                ScrollView{
+                                    ForEach(self.searcher.results!.items) {item in
+                                        NavigationLink(destination:VideoRowView(title: item.snippet.title,
+                                                                                imgurl: item.snippet.thumbnails.default.url,
+                                                                                description: item.snippet.description)
+                                                       
+                                                       ,label:{
+                                            detail(title:item.snippet.title,imgurl:  item.snippet.thumbnails.default.url, description: item.snippet.description
+                                            )
+                                            
+                                        }       )}
+                                    
+                                }
                             }
-                        }
                             
                             
                         }}
-                        
-                    }
                     
                 }
                 
-     
-                
+            }
             
             
+            
+            if self.sheetshowing{Text("")}
+            else{
+                Button(action:{ self.searcher.search()}){
+                    ZStack{Color(red:0.838, green: 0.238, blue: 0.138 )
+                            .ignoresSafeArea()
+                            .frame(width: 200, height:70,alignment: .bottom)
+                            .cornerRadius(100)
+                            .background(Color(red: 0, green: 0, blue: 0, opacity: 0))
+                        Image("pi2")
+                            .resizable()
+                        .frame(width: 70, height: 70)  }
+                }}
             
             
         }
+        
+        
     }
 }
 
