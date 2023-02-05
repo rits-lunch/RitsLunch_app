@@ -13,6 +13,7 @@ struct VideoRowView: View {
     @State var title: String
     let imgurl:String
     @State var description: String
+    @State private var userTrackingMode: MapUserTrackingMode = .follow
     @State private var region = MKCoordinateRegion(
         //Mapの中心の緯度経度
         center: CLLocationCoordinate2D(latitude: 34.982178,
@@ -52,10 +53,12 @@ struct VideoRowView: View {
                 )
                 Map(coordinateRegion: $region,
                     //Mapの操作の指定
-                    interactionModes: .pan,
+                    interactionModes: .all,
+                    showsUserLocation: true,
+                                userTrackingMode: $userTrackingMode,
                    
                     //現在地の表示
-                    showsUserLocation: false,
+                   
                     annotationItems: place)
                         { place in
                            MapPin(coordinate: place.location,

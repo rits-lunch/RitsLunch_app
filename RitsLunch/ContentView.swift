@@ -8,22 +8,41 @@ struct ContentView: View {
     @State private var sheetshowing = true
     var body: some View {
         VStack{
-            ZStack{  Color(red:0.838, green: 0.238, blue: 0.138 ).ignoresSafeArea().frame(height:20)
+           Color(red:0.838, green: 0.238, blue: 0.138 ).ignoresSafeArea().frame(height:20)
                 
               
-            }
+            
              
             ZStack{
                 if self.sheetshowing{
-                    explain()
-                }
+                    VStack{
+                        explain()
+                        Button(action: {
+                            self.searcher.search()
+                            self.sheetshowing.toggle()
+                        }) {
+                            ZStack{
+                                
+                                Color(red:0.838, green: 0.238, blue: 0.138 )
+                                    .ignoresSafeArea()
+                                    .frame(width: 300, height:70,alignment: .bottom)
+                                    .cornerRadius(100)
+                                Image("pi2")
+                                    .resizable()
+                                    .frame(width: 70, height: 70)
+                                
+                            }}
+                    }}
                 else{
+                    
                 
                 NavigationView {
                    
                     VStack {
                         
                         if self.searcher.results != nil {
+                            Text("店舗一覧").font(.title).fontWeight(.bold).frame(alignment: .leading)
+                            
                             ScrollView{
                                 ForEach(self.searcher.results!.items) {item in
                                     NavigationLink(destination:VideoRowView(title: item.snippet.title,
@@ -46,20 +65,7 @@ struct ContentView: View {
                     
                 }
                 
-            Button(action: {
-                                              self.searcher.search()
-                self.sheetshowing.toggle()
-            }) {
-                ZStack{
-                    
-                    Color(red:0.838, green: 0.238, blue: 0.138 )
-                        .ignoresSafeArea()
-                        .frame(height:50,alignment: .bottom)
-                        Image("pi2")
-                            .resizable()
-                        .frame(width: 50, height: 50)
-                        
-                    }}
+     
                 
             
             
