@@ -75,13 +75,13 @@ struct ContentView: View {
                 Button(action:{ self.searcher.search()}){
                     ZStack{Color(red:0.838, green: 0.238, blue: 0.138 )
                             .ignoresSafeArea()
-                            .frame(width: 200, height:70,alignment: .bottom)
+                            .frame(width: 100, height:50,alignment: .bottom)
                             .cornerRadius(100)
                             .background(Color(red: 0, green: 0, blue: 0, opacity: 0))
-                        Image("pi2")
+                        Image("pi21")
                             .resizable()
-                        .frame(width: 70, height: 70)  }
-                }}
+                        .frame(width: 40, height: 40)  }
+              }.buttonStyle(AnimationButtonStyle())}
             
             
         }
