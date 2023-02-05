@@ -18,8 +18,11 @@ struct ContentView: View {
                     VStack{
                         explain()
                         Button(action: {
-                            self.searcher.search()
-                            self.sheetshowing.toggle()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                self.searcher.search()
+                                                          self.sheetshowing.toggle()
+                            }
+                          
                         }) {
                             ZStack{
                                 
@@ -31,7 +34,7 @@ struct ContentView: View {
                                     .resizable()
                                     .frame(width: 70, height: 70)
                                 
-                            }}
+                            }}.buttonStyle(AnimationButtonStyle())
                     }}
                 else{
                     
@@ -74,6 +77,14 @@ struct ContentView: View {
         }
     }
 }
+
+struct AnimationButtonStyle :ButtonStyle{
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+        .scaleEffect(configuration.isPressed ? 0.7 : 1.2)
+        .animation(.easeOut(duration: 0.3), value: configuration.isPressed)
+           }
+    }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

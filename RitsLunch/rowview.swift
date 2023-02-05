@@ -59,7 +59,7 @@ struct VideoRowView: View {
                    
                     //現在地の表示
                    
-                    annotationItems: place)
+                    annotationItems: place )
                         { place in
                            MapPin(coordinate: place.location,
                                       tint: Color.orange)
